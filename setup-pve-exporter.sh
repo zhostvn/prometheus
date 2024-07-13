@@ -10,9 +10,9 @@ touch /etc/prometheus/pve.yml
 
 tee -a /etc/prometheus/pve.yml > /dev/null <<EOT
 default:
-    user: root@pam
-    token_name: "root_prometheus"
-    token_value: "ce5b985c-cd27-4d1d-90a9-f77c5ec7e31b"
+    user: prometheus@pam
+    token_name: "prometheus_monitor"
+    token_value: "b81871f1-0dde-4f27-bd27-695f82fe06e6"
     verify_ssl: false
 EOT
 
