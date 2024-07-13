@@ -1,6 +1,8 @@
 apt install python3-pip -y
 rm -rf /usr/lib/python3.11/EXTERNALLY-MANAGED
 python3 -m pip install prometheus-pve-exporter
+rm -rf /etc/prometheus
+rm -rf /etc/systemd/system/pve_exporter.service
 
 mkdir /etc/prometheus
 touch /etc/prometheus/pve.yml
